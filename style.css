@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+  animation-duration: 3s;
+  animation-name: square;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.elem {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.elem1 {
+  animation-duration: 3s;
+  animation-name: slidex;
+  background: #f0653e;
+}
+
+@keyframes slidex {
+  from {
+    bottom: 0%;
+    left: 0%;
+    width: 25%;
+    height: 25%;
+    border-radius: 0%;
+  }
+
+  25% {
+    bottom: 100%;
+    left: 0%;
+
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+  }
+
+  50% {
+    bottom: 100%;
+    left: 100%;
+
+    width: 25%;
+    height: 25%;
+    border-radius: 0%;
+  }
+
+  75% {
+    bottom: 0%;
+    left: 100%;
+
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+  }
+
+  to {
+    bottom: 0%;
+    left: 0%;
+
+    width: 25%;
+    height: 25%;
+    border-radius: 0%;
+  }
+}
+
+.elem2 {
+  animation-duration: 3s;
+  animation-name: slidey;
+  background: #f3b222;
+}
+
+@keyframes slidey {
+  from {
+    border-color: #000099;
+    bottom: 100%;
+    left: 0%;
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
+  }
+
+  25% {
+    bottom: 100%;
+    left: 100%;
+    width: 30%;
+    height: 30%;
+    border-color: #ff3300;
+    border-radius: 0%;
+  }
+
+  50% {
+    bottom: 0%;
+    left: 100%;
+    width: 35%;
+    height: 35%;
+    border-color: #ff3300;
+    border-radius: 100%;
+  }
+
+  75% {
+    bottom: 0%;
+    left: 0%;
+    width: 30%;
+    height: 30%;
+    border-color: #ff3300;
+    border-radius: 0%;
+  }
+
+  to {
+    bottom: 100%;
+    left: 0%;
+    width: 35%;
+    height: 35%;
+    border-color: #000099;
+    border-radius: 100%;
+  }
+}
+
+.elem3 {
+  animation-duration: 3s;
+  animation-name: slidez;
+  background: #b9c0c0;
+}
+
+@keyframes slidez {
+  from {
+    border-color: #000099;
+    bottom: 100%;
+    left: 100%;
+    width: 25%;
+    height: 25%;
+    border-radius: 0%;
+  }
+
+  25% {
+    bottom: 0%;
+    left: 100%;
+    width: 30%;
+    height: 30%;
+    border-color: #ff3300;
+    border-radius: 100%;
+  }
+
+  50% {
+    bottom: 0%;
+    left: 0%;
+    width: 25%;
+    height: 25%;
+    border-color: #ff3300;
+    border-radius: 0%;
+  }
+
+  75% {
+    bottom: 100%;
+    left: 0%;
+    width: 30%;
+    height: 30%;
+    border-color: #ff3300;
+    border-radius: 100%;
+  }
+
+  to {
+    bottom: 100%;
+    left: 100%;
+    width: 25%;
+    height: 25%;
+    border-color: #000099;
+    border-radius: 0%;
+  }
+}
+
+.elem4 {
+  animation-duration: 3s;
+  animation-name: slidew;
+  background: #8f7473;
+}
+
+@keyframes slidew {
+  from {
+    border-color: #000099;
+    bottom: 0%;
+    left: 100%;
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
+  }
+
+  25% {
+    bottom: 0%;
+    left: 0%;
+    width: 30%;
+    height: 30%;
+    border-color: #ff3300;
+    border-radius: 0%;
+  }
+
+  50% {
+    bottom: 100%;
+    left: 0%;
+    width: 35%;
+    height: 35%;
+    border-color: #ff3300;
+    border-radius: 100%;
+  }
+
+  75% {
+    bottom: 100%;
+    left: 100%;
+    width: 30%;
+    height: 30%;
+    border-color: #000099;
+    border-radius: 0%;
+  }
+
+  to {
+    bottom: 0%;
+    left: 100%;
+    width: 35%;
+    height: 35%;
+    border-color: #ff3300;
+    border-radius: 100%;
+  }
+}

@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+
+  animation-duration: 3s;
+  animation-name: square;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes square {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.elem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid red 9px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.elem1 {
+  animation-duration: 3s;
+  animation-name: slidex;
+}
+
+@keyframes slidex {
+  from {
+    border-color: #000099;
+    bottom: 0%;
+  }
+
+  50% {
+    bottom: 100%;
+    border-color: #ff3300;
+  }
+
+  to {
+    bottom: 0%;
+    border-color: #000099;
+  }
+}
+
+.elem2 {
+  animation-duration: 3s;
+  animation-name: slidey;
+}
+
+@keyframes slidey {
+  from {
+    right: 0%;
+    border-color: #000099;
+  }
+
+  50% {
+    right: 100%;
+    border-color: #ffff00;
+  }
+
+  to {
+    right: 0%;
+    border-color: #000099;
+  }
+}
+
+.elem3 {
+  animation-duration: 3s;
+  animation-name: slidez;
+}
+
+@keyframes slidez {
+  from {
+    left: 0%;
+    border-color: #000099;
+  }
+
+  50% {
+    left: 100%;
+    border-color: #660066;
+  }
+
+  to {
+    left: 0%;
+    border-color: #000099;
+  }
+}
+
+.elem4 {
+  animation-duration: 3s;
+  animation-name: slidew;
+}
+
+@keyframes slidew {
+  from {
+    top: 0%;
+    border-color: #000099;
+  }
+
+  50% {
+    top: 100%;
+    border-color: #00ff00;
+  }
+
+  to {
+    top: 0%;
+    border-color: #000099;
+  }
+}
